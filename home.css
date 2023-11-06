@@ -14,6 +14,8 @@
 
 body {
     background-image: url('pictures/bg3.jpg');
+    
+    background-position: fixed;
     background-repeat: no-repeat;
     background-size:100%;
 }
@@ -100,6 +102,7 @@ a {
     border-width: 1px;
     cursor: pointer;
     color: rgb(9, 78, 124);
+    transition: 0.7s;
 }
 
 .log {
@@ -110,10 +113,20 @@ a {
     font-weight: bold;
 }
 
+.log:hover {
+    background-color: rgb(7, 61, 97);
+    color: white;
+}
+
 .sign {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: bold;
+}
+
+.sign:hover {
+    background-color: rgb(7, 61, 97);
+    color: white;
 }
 
 .pro {
@@ -144,11 +157,17 @@ a {
 }
 
 .price {
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     padding-top: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.price:hover {
+    color: rgb(28, 115, 196);
+}
+
 
 .cart {
     background-color: rgb(28, 115, 196);
@@ -156,12 +175,13 @@ a {
     padding-block: 5px;
     padding-inline: 14px;
     margin-left: 50px;
-    border-bottom-right-radius: 20px;
+    border-radius: 10px;
     margin-top: 5px;
     font-weight: bold;
     font-size: 10x;
     color: white;
     cursor: pointer;
+    transition: 0.7s;
 }
 
 .cart:hover {

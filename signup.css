@@ -4,7 +4,9 @@
 }
 
 body {
-    background-color: rgb(28, 115, 196);
+    background-image: url('pictures/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .main {
@@ -108,8 +110,9 @@ input {
 }
 
 input::placeholder {
-    color: rgb(57, 88, 121);
-    font-weight: bold;
+    color: gray;
+    font-weight: normal;
+    font-size: 10px;
 }
 
 .b1, .b2 {
