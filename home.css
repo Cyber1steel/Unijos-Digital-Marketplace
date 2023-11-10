@@ -13,15 +13,16 @@
 }
 
 body {
+    background-color: rgb(37, 164, 202);
     background-image: url('pictures/bg3.jpg');
-    
-    background-position: fixed;
     background-repeat: no-repeat;
     background-size:100%;
+    background-position: fixed;
+    scroll-behavior: auto;
 }
 
 
-.home {
+header {
     font-size: 50px;
     text-align: center;
     color: white;
@@ -56,7 +57,11 @@ a {
     font-size: 25px;
 }
 
-.in-1 {
+.signup {
+    text-align: center;
+}
+
+.search {
     margin-block: 40px;
     height: 60px;
     width: 550px;
@@ -90,11 +95,8 @@ a {
     color: white;
 }
 
-.signup {
-    text-align: center;
-}
 
-.log, .sign {
+.login-butt, .signup-butt, .cart-butt {
     height: 60px;
     width: 130px;
     font-size: 20px;
@@ -105,7 +107,7 @@ a {
     transition: 0.7s;
 }
 
-.log {
+.login-butt {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-right: 40px;
@@ -113,36 +115,48 @@ a {
     font-weight: bold;
 }
 
-.log:hover {
+.login-butt:hover {
     background-color: rgb(7, 61, 97);
     color: white;
 }
 
-.sign {
+.cart-butt {
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.cart-butt:hover {
+    background-color: rgb(7, 61, 97);
+    color: white;
+}
+
+.signup-butt {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: bold;
 }
 
-.sign:hover {
+.signup-butt:hover {
     background-color: rgb(7, 61, 97);
     color: white;
 }
 
-.pro {
+/* Div Product Designs Begin */
+.product-div {
     display: inline-block;
 }
 
-.magic {
-    display: inline-block;
-}
-
-.main-pro {
+.product-section {
     margin-left: 50px;
     margin-bottom: 100px;
 }
 
-.sec1 {
+/* Product Card Designs Begins */
+.pro {
+    display: inline-block;
+}
+
+.card-section {
     background-color: white;
     display: inline-block;
     padding-block: 10px;
@@ -151,9 +165,16 @@ a {
     border-radius: 20px;
 }
 
-.img1 {
+.product-image {
     height: 200px;
     border-radius: 20px;
+}
+
+.productname {
+    color: rgb(28, 115, 196);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .price {
@@ -189,15 +210,10 @@ a {
     background-color: rgb(9, 78, 124);
     border-width: 1px;
 }
+/* Product Design Ends */
 
-.k4 {
-    color: rgb(28, 115, 196);
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-}
 
-.jjj, .jjjp {
+.no1, .no2 {
     width: 30px;
     height: 30px;
     margin-bottom: 50px;
@@ -215,34 +231,19 @@ a {
     margin-left: 20px;
 }
 
-.jjj:hover {
+.no1:hover {
     color: rgb(28, 115, 196);
     background-color: white;
     border: none;
 }
 
 
-.jjjp:hover {
+.no2:hover {
     color: rgb(28, 115, 196);
     background-color: white;
     border: none;
 }
 
-.des {
-    color: white;
-    font-size: 20px;
-    font-family: cursive;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-span {
-    color: Red;
-    font-size: 22px;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .numbers {
     justify-content: center;
